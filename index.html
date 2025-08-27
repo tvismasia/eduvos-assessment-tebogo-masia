@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduvos Assessment| Tebogo Masia</title>
+  <!--Basic SEO-->
+  <meta name="description" content="Eduvos - Unlock your future with degrees in IT, Business, Psychology and Law. Study at 12 campuses nationwide or online. Apply now and start your journey.">
+  <meta name="keywords" content="Eduvos, University, Degrees, IT, Business, Psychology, Law, Online learning, South Africa">
+  <meta name="author" content="Eduvos">
+  <meta property="og:title" content="Eduvos - Unlock Your Future">
+  <meta property="og:description" content="Study degrees in IT, Business, Psychology and Law at Eduvos. Apply now for online or on-campus programmes.">
+  <meta property="og:image" content="/img/hero.png">
+  <meta property="og:url" content="https://www.eduvos.ac.za">
+  <meta property="og:type" content="website">
+
+  <!--CSS Style-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--Font Awesome for Footer icons-->
+  <script src="https://kit.fontawesome.com/aee4127ff1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- Navbar -->
+<header>
+    <!--Logo-->
+    <div class="logo">
+        <img src="/img/logo.png" alt="Eduvos Logo"> 
+    </div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Nav Links (used for both desktop & mobile) -->
+    <nav class="nav-links" id="navLinks">
+        <a href="#courses" onclick="toggleMenu()">Courses</a>
+        <a href="#why" onclick="toggleMenu()">Why Eduvos</a>
+        <a href="#apply" class="cta" onclick="toggleMenu()">Apply Now</a>
+    </nav>
+</header>
+
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Unlock Your Future at Eduvos</h1>
+      <p>Study degrees in IT, Business, Psychology, and more</p>
+      <button onclick="smoothCourse()">Explore Courses</button>
+    </section>
+
+    <!-- Courses Carousel -->
+    <section id="courses">
+      <h2>Our Popular Courses</h2>
+      <div class="carousel">
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track">
+            
+            <!-- Card 1 -->
+            <div class="course-card">
+              <div class="card-image">
+                <a href="#apply"><img src="img/Bachelor-of-science-in-computer.jpg" alt="BSc in Computer Science"></a>
+                <span class="badge oncampus">On Campus</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#apply">BSc in Computer Science (IT)</a></h3>
+                <p><strong>Duration:</strong> 3 years</p>
+                <p>A dynamic degree in computer science and software dev. Prepare for diverse IT careers.</p>
+              </div>
+              <div class="card-footer">
+                <button onclick="smoothApply()">Apply Now</button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="course-card">
+              <div class="card-image">
+                <a href="#apply"><img src="img/bachelor-of-commerce.jpg" alt="BCom in Commerce"></a>
+                <span class="badge online">Online</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#apply">BCom in Commerce</a></h3>
+                <p><strong>Duration:</strong> 3 years</p>
+                <p>Build a strong foundation in management, HR, marketing, and finance for leadership roles.</p>
+              </div>
+              <div class="card-footer">
+                <button onclick="smoothApply()">Apply Now</button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="course-card">
+              <div class="card-image">
+                <a href="#apply"><img src="img/bachelor-of-law.webp" alt="LLB in Law"></a>
+                <span class="badge oncampus">On Campus</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#apply">LLB in Law</a></h3>
+                <p><strong>Duration:</strong> 4 years</p>
+                <p>Comprehensive legal training in SA and international law. Develop ethics and legal practice skills.</p>
+              </div>
+              <div class="card-footer">
+                <button onclick="smoothApply()">Apply Now</button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="course-card">
+              <div class="card-image">
+                <a href="#apply"><img src="img/higher-cert-in-art-and-design.png" alt="Higher Certificate in Art and Design"></a>
+                <span class="badge online">Online</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#apply">Higher Certificate in Art and Design</a></h3>
+                <p><strong>Duration:</strong> 3 years</p>
+                <p>A hands-on intro to art, design, and visual thinking. Build a strong creative foundation for your future.</p>
+              </div>
+              <div class="card-footer">
+                <button onclick="smoothApply()">Apply Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="carousel-buttons">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Eduvos -->
+    <section class="parallax" id="why">
+      <h2>Why Eduvos?</h2>
+      <div class="why-grid">
+        <div class="why-card">🏫 12 campuses nationwide</div>
+        <div class="why-card">💻 Flexible online learning</div>
+        <div class="why-card">🎓 Accredited degrees</div>
+      </div>
+    </section>
+
+    <!-- Apply Form -->
+    <section id="apply">
+      <h2>Get Started Today</h2>
+      <form id="applyForm">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <label>Course of Interest</label>
+        <select name="course" required>
+          <option value="">Select Course</option>
+          <option>LLB in Law</option>
+          <option>BCom in Commerce</option>
+          <option>BSc in Computer Science</option>
+        </select>
+        <fieldset>
+            <legend>Preferred Study Mode</legend>
+            <label class="inline"><input type="radio" name="mode" value="online" required> Online</label>
+            <label class="inline"><input type="radio" name="mode" value="oncampus" required> On Campus</label>
+            </fieldset>
+            <label class="inline"><input id="privacy" type="checkbox" required> I consent to the <a href="#" target="_blank">terms & privacy policy</a></label><br>
+        <button type="submit">Apply Now</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><a href="#">Eduvos HQ, Johannesburg, South Africa</a> | <a href="#">+27 (0)11 123 4567</a> | <a href="#">info@eduvos.ac.za</a></p>
+    <p>
+      <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a> 
+      <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a> 
+      <a href="#"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+    </p>
+    <p>© 2025 Eduvos. All Rights Reserved.</p>
+  </footer>
+  
+  <script>
+    function toggleMenu() {
+        const nav = document.getElementById('navLinks');
+        nav.classList.toggle('open');
+    }
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
