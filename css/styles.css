@@ -55,7 +55,7 @@ nav.nav-links {
 /* -- Hero -- */
 .hero {
   background: linear-gradient(rgba(185, 228, 255, 0.5), rgba(21, 48, 93, 0.5)),
-              url('/img/hero.png') no-repeat center/cover;
+              url('../img/hero.png') no-repeat center/cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -143,7 +143,7 @@ nav.nav-links {
 
 /* -- Why Eduvos Section -- */
 .parallax {
-  background: url('/img/bachelor-of-commerce-honours-in-business-management.jpg') no-repeat center/cover fixed;
+  background: url('../img/bachelor-of-commerce-honours-in-business-management.jpg') no-repeat center/cover fixed;
   color: white;
   padding: 100px 20px;
 }
